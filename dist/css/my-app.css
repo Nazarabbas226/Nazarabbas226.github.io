@@ -1,4 +1,4 @@
-﻿h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family:sans-serif;
     margin: 0 0 15px;
 }
@@ -53,10 +53,6 @@ h5{
 	padding: 10px 20px;	
 	
 }
-.list-area{
-	padding: 10px 20px;	
-	
-}
 
 .about-text{
 overflow:hidden;
@@ -103,8 +99,8 @@ img{
     }
     
     .box-icon {
-    width: 75px!important;
-    height: 75px!important;
+    width: 80px!important;
+    height: 80px!important;
     font-size: 25px;
     text-align: center!important;
     vertical-align: middle!important;
@@ -123,4 +119,33 @@ img{
 .row .col-10-custom {
     width: calc((100% - -45px * 9) / 10);
 }
+.content-main
+{
+	max-width:100%;
+	margin:0 auto;
+}
 
+.box-icona {
+    display: block;
+    float: left;
+    font-size: 35px;
+    height: 100px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    width: 100px;
+    margin-left:20px;
+  }
+  
+.title_bg{
+	margin:0px;
+	border-radius:5px 5px 0px 0px;
+	padding:20px;
+	background:#F8F8F8;
+}
+.page{
+	background-color:#fff!important;
+}
+.navbar, .subnavbar, .toolbar{
+	background-color:#F8F8F8!important;
+}
