@@ -1,7 +1,16 @@
 h1, h2, h3, h4, h5, h6 {
     font-family:sans-serif;
     margin: 0 0 15px;
+
 }
+
+.sliding{
+	font-weight:bold!important;
+	letter-spacing:1px!important;
+	font-size:20px!important;
+}
+
+
 h4{
 	font-size:24px;
 }
@@ -140,8 +149,10 @@ img{
 .title_bg{
 	margin:0px;
 	border-radius:5px 5px 0px 0px;
-	padding:20px;
-	background:#F8F8F8;
+	padding-left:10px;
+	background:#e2e2e2;
+	padding-top:15px;
+	padding-bottom:15px
 }
 .page{
 	background-color:#fff!important;
@@ -149,3 +160,22 @@ img{
 .navbar, .subnavbar, .toolbar{
 	background-color:#F8F8F8!important;
 }
+
+.small-text{
+	font-size:12px;
+}
+
+.fixed{
+	position:fixed!important;
+}
+
+.font-size{
+	font-size:24px!important;
+	color:#000;
+}
+
+.jf-space{
+	justify-content: o !important;
+	
+}
+
