@@ -10,9 +10,12 @@
 <!-- Path to Framework7 Library CSS-->
 <link href="css/framework7.ios.min.css" rel="stylesheet">
 <link href="css/framework7.ios.colors.min.css" rel="stylesheet">
-
+<link href="css/font-awesome.css" rel="stylesheet">
 <!-- Path to your custom app styles-->
 <link href="css/my-app.css" rel="stylesheet">
+<link href="font-awesome-4.6.1/css/font-awesome.css">
+<link href="font-awesome-4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,7 +29,6 @@
 <!-- Left panel with reveal effect-->
 <div class="panel panel-left panel-reveal">
 	<div class="content-block badge color-blue">
-	
 		<p>Left panel content goes here</p>
 	</div>
 </div>
@@ -41,12 +43,13 @@
 	<!-- Your main view, should have "view-main" class-->
 	<div class="view view-main">
 		<!-- Top Navbar-->
-		<div class="navbar">
+		<div class="navbar fixed">
 			<div class="navbar-inner">
 				<!-- We have home navbar without left link-->
 				<div class="left">
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>				<div style="margin-right:30px;" class=" sliding">
+					<a class="link icon-only open-panel" href="#">
+					<i class="icon icon-bars"></i></a></div>
+				<div class=" sliding center">
 					Awesome App</div>
 			</div>
 		</div>
@@ -58,59 +61,89 @@
 				<div class="page-content">
 					<!--swiper-->
 					<div class="header-area">
-					<h2>Dashboard</h2>
-					<div class="row">
-					<div class="col-10-custom">
-					<div class="img-circle bg-vacant box-icon"></div>
-					<h5  class="">Vacant</h5>
-					</div>
-					
-					<div class="col-10-custom">
-					<div class="img-circle bg-occup box-icon"></div>
-					<h5>Occupied</h5>
-					</div>
-					<div class="col-10-custom ">
-					<div class="img-circle bg-hk box-icon"></div>
-					<h5>House Keeping</h5>
-					</div>
-					<div class="col-10-custom">
-					<div class="img-circle bg-um box-icon"></div>
-					<h5>Under Maintenance</h5>
-					</div>
-
-
-					</div>
+						<h2>Dashboard</h2>
+						<div class="row">
+							<div class="col-10-custom">
+								<div class="img-circle bg-vacant box-icon">
+								</div>
+								<h5 class="">Vacant</h5>
+							</div>
+							<div class="col-10-custom">
+								<div class="img-circle bg-occup box-icon">
+								</div>
+								<h5>Occupied</h5>
+							</div>
+							<div class="col-10-custom ">
+								<div class="img-circle bg-hk box-icon">
+								</div>
+								<h5>House Keeping</h5>
+							</div>
+							<div class="col-10-custom">
+								<div class="img-circle bg-um box-icon">
+								</div>
+								<h5>Under Maintenance</h5>
+							</div>
+						</div>
 					</div>
 					<!--swiper close-->
-					 <div class="content-main">
-					 <div  class=" content-block-title  title_bg bg-blue margin-ten-top">
-					 <b class="color-black">Dulexe</b></div>
-					 <div class="list-block media-item ">
-					 <ul>
-					 <li class="item-link item-content">
-					 <div class="col-10">
-					 <div class="bg-vacant box-icona">
-					 </div>
-					 <div class="bg-vacant box-icona">
-					 </div>
-					 <div class="bg-vacant box-icona">
-					 </div>
-					 <div class="bg-vacant box-icona">
-					 </div>
-					 <div class="bg-vacant box-icona">
-					 </div>
-					 <div class="bg-vacant box-icona">
-					 </div>
-
-					 </div>
-					 </li>
-					 </ul>
-					 </div>
-					 </div>
-										
+					<div class="content-main">
+						<div class=" content-block-title  title_bg  margin-ten-top">
+							<b class="color-black">Dulexe</b></div>
+						<div class="list-block media-item " style="margin-top: 0px!important; padding-left: 0px!important;">
+							<ul>
+								<li class="bg-hk"><a class="item-link" href="#">
+								<div class="item-content " style="padding-left: 0px;">
+									<div class="item-inner">
+										<div class="item-title " style="padding-left: 10px;">
+											<b>501 <font class="small-text">AC</font></b></div>
+									</div>
+								</div>
+								</a></li>
+								<li class="bg-vacant">
+								<a class="item-link" href="#">
+								<div class="item-content " style="padding-left: 0px;">
+									<div class="item-inner">
+										<div class="item-title " style="padding-left: 10px;">
+											<b>501 <font class="small-text">AC</font></b></div>
+									</div>
+								</div>
+								</a></li>
+								<li class="bg-vacant">
+								<a class="item-link" href="#">
+								<div class="item-content " style="padding-left: 0px;">
+									<div class="item-inner">
+										<div class="item-title " style="padding-left: 10px;">
+											<b>501 <font class="small-text">AC</font></b></div>
+									</div>
+								</div>
+								</a></li>
+								<li class="bg-occup">
+								<a class="item-link" href="#">
+								<div class="item-content " style="padding-left: 0px;">
+									<div class="item-inner">
+										<div class="item-title " style="padding-left: 10px;">
+											<b>501 <font class="small-text">AC</font></b></div>
+									</div>
+								</div>
+								</a></li>
+								<li class="bg-vacant">
+								<a class="item-link" href="#">
+								<div class="item-content " style="padding-left: 0px;">
+									<div class="item-inner">
+										<div class="item-title " style="padding-left: 10px;">
+											<b>501 <font class="small-text">AC</font></b></div>
+									</div>
+								</div>
+								</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="toolbar tabbar tabbar-labels fixed">
+<div class="toolbar-inner"><a href="#view-1" class="tab-link active"><i class="fa fa-home font-size" aria-hidden="true"></i> <span class="tabbar-label">Home</span></a><a href="#view-2" class="tab-link"><i class="fa fa-book font-size" aria-hidden="true"></i><span class="tabbar-label">Booking</span></a><a href="#view-3" class="tab-link"><i class="fa fa-th font-size" aria-hidden="true"></i><span class="tabbar-label">Tariff Calc</span></a><a href="#view-4" class="tab-link"><i class="fa fa-cog font-size" aria-hidden="true"></i><span class="tabbar-label">Setting</span></a></div>
+</div>
 	</div>
 	<!-- Bottom Toolbar--></div>
 <!-- Path to Framework7 Library JS-->
