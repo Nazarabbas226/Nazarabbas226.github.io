@@ -146,6 +146,10 @@ img{
     margin-left:20px;
   }
   
+.panel{
+	background:#E2E2E2!important;
+}
+  
 .title_bg{
 	margin:0px;
 	border-radius:5px 5px 0px 0px;
