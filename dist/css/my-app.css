@@ -16,7 +16,7 @@ h4{
 }
 
 h5{
-	text-align: -moz-center;
+	text-align: center;
 }
  	.swiper-container {
   height:100%;
@@ -158,7 +158,7 @@ img{
 	background-color:#fff!important;
 }
 .navbar, .subnavbar, .toolbar{
-	background-color:#F8F8F8!important;
+	background-color:#E2E2E2!important;
 }
 
 .small-text{
@@ -175,7 +175,8 @@ img{
 }
 
 .jf-space{
-	justify-content: o !important;
-	
+	justify-content: o !important;	
 }
+
+
 
