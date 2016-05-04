@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<title>My App</title>
+<!-- Path to Framework7 Library CSS-->
+<link href="css/framework7.material.css" rel="stylesheet">
+<link href="css/framework7.material.colors.min.css" rel="stylesheet">
+<link href="Framework7-Keypad-master/dist/framework7.keypad.css" rel="stylesheet">
+<link href="Framework7-Keypad-master/dist/framework7.keypad.min.css" rel="stylesheet">
+
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Path to your custom app styles-->
+<link href="css/my-app.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay">
+</div>
+<!-- Panels overlay-->
+<div class="panel-overlay">
+</div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+	<div class="content-block">
+		<p>Left panel content goes here</p>
+	</div>
+</div>
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+	<div class="content-block">
+		<p>Right panel content goes here</p>
+	</div>
+</div>
+<!-- Views-->
+<div class="views">
+	<!-- Your main view, should have "view-main" class-->
+	<div class="view view-main">
+		<!-- Top Navbar-->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<!-- We have home navbar without left link-->
+				<div class="center ">
+					Restuarant</div>
+			</div>
+		</div>
+		<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+		<div class="pages navbar-through toolbar-through">
+			<!-- Page, data-page contains page name-->
+			<div class="page" data-page="index">
+				<!-- Scrollable page content-->
+				<div class="page-content">
+					<div class="content-block">
+					<h3>Details</h3></div>
+					<div class="list-block">
+					<div  class="content-block-title ">
+						<b>Table No :</b></div>
+						<ul>
+							<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-input">
+										<input id="demo-numpad" class="" placeholder="Enter number" readonly type="text">
+									</div>
+								</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list-block">
+					<div  class="content-block-title ">
+						<b>Customer Name :</b></div>
+						<ul>
+							<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-input">
+										<input id="" class="" placeholder="Enter Name"	 readonly type="text">
+									</div>
+								</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+
+					<a href="form.html"><div  style="color:#fff;" class="button button-big  bg-blue"><b>Take Order</b>
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<!-- Bottom Toolbar-->
+		<div class="toolbar">
+			<div class="toolbar-inner">
+				<a class="link" href="#">Link 1</a><a class="link" href="#">Link 
+				2</a></div>
+		</div>
+	</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script src="js/framework7.min.js" type="text/javascript"></script>
+<!-- Path to your app js-->
+<script src="js/my-app.js" type="text/javascript"></script>
+<script src="Framework7-Keypad-master/dist/framework7.keypad.js" type="text/javascript"></script>
+<script src="Framework7-Keypad-master/dist/framework7.keypad.min.js" type="text/javascript"></script>
+
+<script>
+      var $$ = Dom7;
+      var myApp = new Framework7({
+        animateNavBackIcon: true
+      });
+      var mainView = myApp.addView('.view-main', {
+        dynamicNavbar: true
+      });
+
+      var numpad = myApp.keypad({
+        input: '#demo-numpad'
+      });
+      var numpadLimited = myApp.keypad({
+        input: '#demo-numpad-limited',
+        valueMaxLength: 2,
+        dotButton: false
+      });
+      var calculator = myApp.keypad({
+        input: '#demo-calculator',
+        type: 'calculator',
+        toolbar: false
+      });
+
+      // Inline calculator
+      myApp.onPageInit('calculator', function (page) {
+        var calculatorInline = myApp.keypad({
+          input: '#demo-calculator-inline',
+          container: '#calculator-inline-container',
+          toolbar: false,
+          type: 'calculator'
+        });
+      });
+
+      // Passcode
+      myApp.onPageInit('passcode', function (page) {
+        var numpadInline = myApp.keypad({
+          input: '#demo-numpad-inline',
+          container: '#numpad-inline-container',
+          toolbar: false,
+          valueMaxLength: 4,
+          dotButton: false,
+          formatValue: function(p, value) {
+            value = value.toString();
+            return ('****').substring(0, value.length) + ('____').substring(0, 4 - value.length);
+          },
+          onChange: function (p, value) {
+            value = value.toString();
+            if (value.length === 4) {
+              myApp.alert('Thank you! Your passcode is<br><b>' + value + '</b>', function () {
+                mainView.router.back();
+              });
+            }
+          }
+        });
+      });
+      
+    </script>
+
+</body>
+
+</html>
