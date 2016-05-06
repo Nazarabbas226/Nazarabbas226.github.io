@@ -1,93 +1,83 @@
-
-<!-- We don't need full layout here, because this page will be parsed with Ajax-->
-<!-- Top Navbar-->
 <div class="navbar">
-  <div class="navbar-inner">
-       
-
-      </div>
+	<div class="navbar-inner">
+		<div class="left sliding">
+			<a class="back link" href="index.html"><i class="icon icon-back">
+			</i></a></div>
+			<div class="right sliding">
+			<a class=" link" href="services.html"><span>Proceed</span><i class="icon icon-forward"></i></a>
+			</div>
+	</div>
 </div>
-<div class="pages">
-  <!-- Page, data-page contains page name-->
-  <div data-page="services" class="page no-navbar">
-    <!-- Scrollable page content-->
-    <div class="page-content">
-      <div class="content-block">
-      <a href="#" style="color:#fff; margin:0px 25px;" class="back button active bg-blue"><b>Go Back</b></a>
-    </div>
-      <div class="list-block">
-<ul>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>Total Amount :</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>Service Tax</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>SBC Tax :</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>Discount :</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>% Dis :</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="item-content">
-
-<div class="item-inner">
-<div class="item-title label"><b>Final Amount :</b></div>
-<div class="item-input">
-<input type="numpad" placeholder="">
-</div>
-</div>
-</div>
-</li>
-
-</ul>
-</div>
-     
-      
-    </div>
-  </div>
+<div class="page" data-page="calculator">
+	<div class="page-content">
+		<div class="content-block">
+			<div class="content-block-title">
+			</div>
+		</div>
+		<div class="list-block">
+			<div class="content-block-title">
+				<b style="font-size: 18px;">Add Items</b></div>
+			<ul>
+				<li>
+				<div class="item-content">
+					<div class="item-inner">
+						<div class="item-input">
+							<input placeholder="Item No :" readonly="readonly" type="numpad" />
+						</div>
+						<div class="item-input">
+							<input placeholder="Item Name :" type="text" />
+						</div>
+						<div class="item-input">
+							<input placeholder="Item Quantity :" readonly="readonly" type="numpad" />
+						</div>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="col-50">
+						<div class="item-title">
+							<b>Total Items :</b><b class="badge" style="font-size: 13px;  margin-left: 5px;">11</b></div>
+					</div>
+					<div class="col-50">
+						<div class="item-title">
+							<b>Total Amounts :</b><b class="badge" style=" font-size: 13px; margin-left: 5px;">15255</b></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-block">
+			<div class="content-block-title">
+				<b style="font-size: 18px;">Order Lists</b></div>
+			<div class="card ks-facebook-card" data-id="41">
+				<div class="card-header">
+					<div class="ks-facebook-name">
+						Plain Chapati :
+						<b class="badge" style="font-size: 15px; margin-left: 5px;">
+						11</b></div>
+				</div>
+				<div class="card-content">
+					<div class="">
+						<div class="item-inner">
+							<div style="margin-left:10px;" class="item-title chip">
+								<b >MRP :</b><span class=" chip-label"><b style="font-size: 15px;">5</b></span></div>
+							<div class="item-title">
+								<span>
+								<b>Total :</b>
+								<div style="margin-left:5px;" class="chip">
+									<div class="chip-label">
+										<b>5 * 3 = 15</b></div>
+								</div>
+								</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<a href="#" class="floating-button floating-button-to-popover open-popover color-blue">
+            <i class="icon icon-plus"></i>
+            </a>
 </div>
