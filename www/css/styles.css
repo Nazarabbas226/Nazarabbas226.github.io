@@ -1,0 +1,101 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+body{
+    background-color: #fff!important;
+}
+div.modal-overlay.modal-overlay-visible {
+    visibility:collapse;
+    opacity: 0;
+}
+.page {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.navbar{
+    background-color: #F44336;
+    height: 60px;
+    color:#fff;
+}
+.content-block {
+    margin: 35px 0;
+    padding: 0 10px;
+    color: #6d6d72;
+    box-sizing: border-box;
+}   
+.logo{
+    color:#fff;
+    font-weight:bold;
+    font-size: 20px;
+   line-height: 60px;
+  
+}
+.title{
+    text-align: center;
+    background-color:#eee;
+    margin-top:60px;
+}
+ h3{
+    padding: 0px 0px;
+    
+}
+.list-view{
+    margin:0px 0px; 
+}
+.card{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    margin-top:20px;
+}
+.list-group h4{
+    margin:0px;
+    font-size: 1.1rem;
+}
+.inn-list{
+    padding-top: 0.2rem!important;
+    padding-bottom: 0.2rem!important;
+}
+.inn-list p{
+    margin-right: 1.1rem;
+    font-size: 12px;
+    color: #9e9e9e;
+    text-transform: lowercase;
+}
+ .fa-chevron-circle-right:before {
+    content: "\f138";
+    position: absolute;
+    right: 10px;
+    top: 0.5rem;
+    font-size: 30px;
+}
+.fa{
+    color:#f44336!important;
+}
+ a{
+    color:#f44336!important;
+}
+.list-details{
+    line-height: 25px;
+}
+.list-details h5{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.list-details p{
+    color:#000;
+    font-size: 1rem;
+}
